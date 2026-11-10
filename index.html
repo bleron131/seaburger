@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="de-CH">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seaside Smashies – Smashburger in Staad am Bodensee</title>
+  <meta name="description" content="Frisch gesmashte Burger an der Hauptstrasse 2 in Staad. Zum Abholen, Liefern lassen oder draussen essen mit Blick auf den Bodensee. Di–So geöffnet, Tel. 071 855 50 56.">
+  <meta name="theme-color" content="#000000">
+
+  <meta property="og:type" content="restaurant">
+  <meta property="og:locale" content="de_CH">
+  <meta property="og:title" content="Seaside Smashies – Smashburger in Staad am Bodensee">
+  <meta property="og:description" content="Kross am Rand, saftig in der Mitte. Frisch gesmasht in Staad, zum Abholen oder Liefern lassen.">
+  <meta property="og:image" content="assets/img/og.jpg">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Seaside Smashies",
+    "image": "assets/img/og.jpg",
+    "servesCuisine": ["Burger", "Smashburger"],
+    "priceRange": "CHF 10–20",
+    "telephone": "+41718555056",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Hauptstrasse 2",
+      "postalCode": "9422",
+      "addressLocality": "Staad",
+      "addressCountry": "CH"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday"], "opens": "11:30", "closes": "21:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday", "Saturday"], "opens": "11:30", "closes": "22:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "12:00", "closes": "21:00" }
+    ],
+    "sameAs": ["https://www.tiktok.com/@seasidesmashies"]
+  }
+  </script>
+</head>
+<body>
+
+<a class="skip" href="#karte">Direkt zur Karte</a>
+
+<header class="head">
+  <div class="wrap head-in">
+    <a class="logo" href="#top" aria-label="Seaside Smashies, zum Seitenanfang">
+      <span>Seaside Smashies</span>
+      <svg viewBox="0 0 120 10" aria-hidden="true" preserveAspectRatio="none"><path d="M2 6c10-6 19-6 29 0s19 6 29 0 19-6 29 0 19 6 29 0" /></svg>
+    </a>
+    <nav class="nav" aria-label="Hauptnavigation">
+      <a href="#karte">Karte</a>
+      <a href="#laden">Der Laden</a>
+      <a href="#stimmen">Stimmen</a>
+      <a href="#hin">Hinkommen</a>
+    </nav>
+    <p class="status" data-status hidden></p>
+    <a class="btn btn-red head-cta" href="https://www.just-eat.ch" target="_blank" rel="noopener">Bestellen</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ Einstieg ============ -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <p class="kicker">Smashburger · Staad am Bodensee</p>
+        <h1>Kross am Rand.<br>Saftig in der&nbsp;Mitte.</h1>
+        <p class="lead">Wir drücken jedes Patty erst auf die heisse Platte, wenn du bestellt hast. Das dauert ein paar Minuten länger. Genau deshalb schmeckt es so.</p>
+        <div class="hero-cta">
+          <a class="btn btn-red btn-lg" href="https://www.just-eat.ch" target="_blank" rel="noopener">Liefern lassen</a>
+          <a class="btn btn-line btn-lg" href="tel:+41718555056">Abholen: 071 855 50 56</a>
+        </div>
+        <p class="hero-rating">
+          <span><b>4.8</b> von 5 bei Google, 187 Bewertungen</span>
+          <span><b>4.9</b> auf Just Eat</span>
+        </p>
+      </div>
+
+      <div class="hero-pic">
+        <img src="assets/img/burger-hero-800.webp"
+             srcset="assets/img/burger-hero-800.webp 800w, assets/img/burger-hero-1400.webp 1400w"
+             sizes="(min-width: 900px) 52vw, 100vw"
+             width="1400" height="1130" alt="Double Smashies Cheesy mit zwei Patties, geschmolzenem Cheddar, Tomate, Salat und Essiggurken im Brioche Bun" fetchpriority="high">
+        <svg class="stamp" viewBox="0 0 200 200" aria-hidden="true">
+          <circle cx="100" cy="100" r="98"/>
+          <path id="stamp-arc" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0" fill="none"/>
+          <text><textPath href="#stamp-arc" textLength="456">FRISCH GESMASHT · NIE TIEFGEKÜHLT · </textPath></text>
+          <text class="stamp-mid" x="100" y="96" text-anchor="middle">ab</text>
+          <text class="stamp-price" x="100" y="128" text-anchor="middle">10.90</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Das Wichtigste auf einen Blick ============ -->
+  <section class="facts" aria-label="Das Wichtigste auf einen Blick">
+    <div class="wrap facts-in">
+      <div>
+        <h2>Heute</h2>
+        <p data-today>Dienstag bis Sonntag geöffnet</p>
+      </div>
+      <div>
+        <h2>Wo</h2>
+        <p><a href="https://www.google.com/maps/dir/?api=1&destination=Hauptstrasse+2,+9422+Staad" target="_blank" rel="noopener">Hauptstrasse 2, 9422 Staad</a></p>
+      </div>
+      <div>
+        <h2>Wie</h2>
+        <p>Abholen, liefern lassen oder draussen essen</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Karte ============ -->
+  <section class="menu" id="karte">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>Die Karte</h2>
+        <p>Preise in Franken, inklusive Mehrwertsteuer.</p>
+      </header>
+
+      <div class="styles">
+        <p class="styles-intro">Jeden Burger gibt es in drei Varianten:</p>
+        <dl>
+          <div><dt>Classic</dt><dd>Salat, Tomaten, Zwiebeln, Essiggurken</dd></div>
+          <div><dt>Cheesy</dt><dd>dasselbe mit Cheddar</dd></div>
+          <div><dt>Seaside</dt><dd>mit Ei obendrauf</dd></div>
+        </dl>
+      </div>
+
+      <nav class="chips" aria-label="Kategorien der Karte">
+        <a href="#single">Single</a>
+        <a href="#double">Double</a>
+        <a href="#chicken">Chicken</a>
+        <a href="#veggie">Veggie</a>
+        <a href="#pepito">Pepito</a>
+        <a href="#snacks">Snacks</a>
+        <a href="#drinks">Getränke</a>
+      </nav>
+
+      <div class="menu-grid">
+
+        <div class="col col-beef">
+          <section class="cat" id="single">
+            <h3>Single Smashies</h3>
+            <p class="cat-note">Ein Rindfleisch-Patty im Brioche Bun</p>
+            <ul>
+              <li><div class="row"><h4>Classic</h4><i></i><b>10.90</b></div><p>Smash Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+              <li><div class="row"><h4>Cheesy</h4><i></i><b>11.90</b></div><p>Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+              <li><div class="row"><h4>Seaside</h4><i></i><b>12.90</b></div><p>Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Ei, Essiggurken</p></li>
+            </ul>
+          </section>
+
+          <section class="cat" id="double">
+            <h3>Double Smashies</h3>
+            <p class="cat-note">Zwei Patties, für den grossen Hunger</p>
+            <ul>
+              <li><div class="row"><h4>Classic</h4><i></i><b>12.90</b></div><p>2× Smash Rindfleisch-Patty, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+              <li><div class="row"><h4>Cheesy</h4><i></i><b>13.90</b></div><p>2× Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+              <li><div class="row"><h4>Seaside</h4><i></i><b>14.90</b></div><p>2× Smash Rindfleisch-Patty, Cheddar, Salat, Tomaten, Zwiebeln, Ei, Essiggurken</p></li>
+            </ul>
+          </section>
+        </div>
+
+        <figure class="shot shot-combo">
+          <img src="assets/img/menu-combo-520.webp"
+               srcset="assets/img/menu-combo-520.webp 520w, assets/img/menu-combo-900.webp 900w"
+               sizes="(min-width: 900px) 40vw, 100vw"
+               width="900" height="1350" loading="lazy" alt="Double Smashies mit Cheddar und Essiggurken, daneben eine Tüte Pommes und ein Becher Cola mit Eis">
+          <figcaption>Double Cheesy, Pommes, kalte Cola. Viel mehr braucht ein Abend nicht.</figcaption>
+        </figure>
+
+        <section class="cat" id="chicken">
+          <h3>Chicken Smashies</h3>
+          <p class="cat-note">Knuspriges Pouletfilet im Brioche Bun</p>
+          <ul>
+            <li><div class="row"><h4>Classic</h4><i></i><b>12.90</b></div><p>Pouletfilet, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+            <li><div class="row"><h4>Cheesy</h4><i></i><b>13.90</b></div><p>Pouletfilet, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+            <li><div class="row"><h4>Seaside</h4><i></i><b>14.90</b></div><p>Pouletfilet, Salat, Tomaten, Zwiebeln, Ei, Essiggurken</p></li>
+          </ul>
+        </section>
+
+        <section class="cat" id="veggie">
+          <h3>Veggie Falafel</h3>
+          <p class="cat-note">Ohne Fleisch, mit Falafel im Brioche Bun</p>
+          <ul>
+            <li><div class="row"><h4>Classic</h4><i></i><b>12.90</b></div><p>Falafel, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+            <li><div class="row"><h4>Cheesy</h4><i></i><b>13.90</b></div><p>Falafel, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+          </ul>
+        </section>
+
+        <section class="cat" id="pepito">
+          <h3>Homemade Pepito</h3>
+          <p class="cat-note">Pouletstreifen im Baguette statt im Bun</p>
+          <ul>
+            <li><div class="row"><h4>Classic</h4><i></i><b>13.90</b></div><p>Baguettebrot, Pouletfleischstreifen, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+            <li><div class="row"><h4>Cheesy</h4><i></i><b>14.90</b></div><p>Baguettebrot, Pouletfleischstreifen, Cheddar, Salat, Tomaten, Zwiebeln, Essiggurken</p></li>
+            <li><div class="row"><h4>Seaside</h4><i></i><b>15.90</b></div><p>Baguettebrot, Pouletfleischstreifen, Cheddar, Salat, Tomaten, Zwiebeln, Ei, Essiggurken</p></li>
+          </ul>
+        </section>
+
+        <figure class="shot shot-fries">
+          <img src="assets/img/pommes-533.webp" width="533" height="800" loading="lazy" alt="Goldgelbe Pommes Frites in einer rot-weiss gestreiften Tüte">
+        </figure>
+
+        <section class="cat" id="snacks">
+          <h3>Snacks</h3>
+          <p class="cat-note">Dazu oder einfach so</p>
+          <ul>
+            <li><div class="row"><h4>Pommes Frites</h4><i></i><b>5.90</b></div><p>Knusprige Kartoffelpommes</p></li>
+            <li><div class="row"><h4>Sweet Potatoes</h4><i></i><b>7.90</b></div><p>Süsskartoffel-Pommes</p></li>
+            <li><div class="row"><h4>Country Potatoes</h4><i></i><b>7.90</b></div><p>Kartoffel-Wedges</p></li>
+            <li><div class="row"><h4>Mozzarella Sticks</h4><i></i><b>8.50</b></div><p>6 Stück, in knuspriger Panade</p></li>
+            <li><div class="row"><h4>Chicken Nuggets</h4><i></i><b>8.90</b></div><p>6 Stück Poulet in knuspriger Panade</p></li>
+          </ul>
+        </section>
+
+        <section class="cat cat-drinks" id="drinks">
+          <h3>Getränke</h3>
+          <p class="cat-note">Alles kalt aus dem Kühlschrank</p>
+          <ul>
+            <li>
+              <div class="row"><h4>Dose</h4><i></i><b>3.90</b></div>
+              <p>Coca Cola, Coca Cola Zero, Coca Cola Vanille · Fanta Orange, Fanta Mango Drachenfrucht, Fanta Exotic · Oasis Tropical, Erdbeere, Cassis, Apfel · Hawai Tropical · Esta The Peach, Esta The Lemon</p>
+            </li>
+            <li>
+              <div class="row"><h4>PET-Flasche</h4><i></i><b>4.50</b></div>
+              <p>Coca Cola, Coca Cola Zero, Fanta Orange · Valser Still · S. Pellegrino</p>
+            </li>
+            <li>
+              <div class="row"><h4>Red Bull</h4><i></i><b>4.50</b></div>
+              <p>Normal oder Sugar Free</p>
+            </li>
+            <li>
+              <div class="row"><h4>Bier</h4><i></i><b>5.50</b></div>
+              <p>Schützengarten, Dose 5 dl</p>
+            </li>
+          </ul>
+        </section>
+
+      </div>
+
+      <div class="menu-cta">
+        <p>Hunger bekommen?</p>
+        <a class="btn btn-red btn-lg" href="https://www.just-eat.ch" target="_blank" rel="noopener">Auf Just Eat bestellen</a>
+        <a class="btn btn-dark btn-lg" href="tel:+41718555056">Anrufen und abholen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Der Laden ============ -->
+  <section class="shop" id="laden">
+    <div class="wrap shop-in">
+      <figure class="shop-pic">
+        <img src="assets/img/burger-hand.webp" width="335" height="600" loading="lazy" alt="Eine Hand hält einen frisch gebratenen Burger im Papier">
+      </figure>
+      <div class="shop-text">
+        <h2>Ein Laden, eine heisse Platte, kein Tiefkühler.</h2>
+        <p>Seaside Smashies ist ein kleiner Burgerladen an der Hauptstrasse in Staad, direkt am Bodensee. Bei uns kommt das Rindfleisch als Kugel auf die Plancha und wird einmal kräftig flachgedrückt. So entsteht die dunkle Kruste, wegen der man für einen Smashburger auch mal einen Umweg fährt.</p>
+        <p>Das Fleisch war nie gefroren, die Saucen rühren wir selbst an, und gebraten wird erst, wenn deine Bestellung da ist.</p>
+        <ul class="shop-list">
+          <li><b>Draussen sitzen</b>Bei schönem Wetter isst du mit Blick auf den See.</li>
+          <li><b>Hunde dürfen mit</b>Auch drinnen. Gehört für uns dazu.</li>
+          <li><b>Abholen oder liefern</b>Ruf an und hol es ab, oder bestell über Just Eat.</li>
+          <li><b>Sechs Tage offen</b>Dienstag bis Sonntag. Am Montag ruhen wir uns aus.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Stimmen ============ -->
+  <section class="voices" id="stimmen">
+    <div class="wrap">
+      <header class="sec-head">
+        <h2>Was Gäste schreiben</h2>
+        <p>187 Bewertungen bei Google, im Schnitt 4.8 von 5 Sternen. Hier ein paar davon, unverändert.</p>
+      </header>
+      <div class="quotes">
+        <blockquote class="q-big">
+          <p>Burger war der Hammer, sehr lecker! Waren zu zweit da und haben nach dem Burger gleich noch ein sehr gutes Poulet-Pepito geteilt. Getränkeauswahl super! Saucen sehr gut! Nettes, junges Team. Weiter so 👍🏼</p>
+          <footer>Drilon Hasanaj</footer>
+        </blockquote>
+        <blockquote>
+          <p>Die Burger sind mega frisch, die Menügrösse passt perfekt! Bin immer wieder gerne hier, auch wegen dem super netten Team!</p>
+          <footer>Giulia Cassano</footer>
+        </blockquote>
+        <blockquote>
+          <p>War heute zur Eröffnung und sehr gespannt. Ambiente, Burger und Bedienung haben meine Erwartungen weit übertroffen. Superlecker, frisch und gutes Preis-Leistungsverhältnis. Bravo ans sympathische Seaside Team!</p>
+          <footer>Angelika Seargent</footer>
+        </blockquote>
+        <blockquote>
+          <p>Sehr feiner Burger! Frische Zutaten, perfekt gebraten und richtig saftig. Dazu freundlicher Service und entspannte Atmosphäre – komme definitiv wieder!</p>
+          <footer>Pablo Malik Zürcher</footer>
+        </blockquote>
+        <blockquote>
+          <p>Burger war unglaublich gut – sehr leckeres Fleisch und frische Zutaten. Service war auch klasse! Wir kommen gerne wieder 😁</p>
+          <footer>David Peterson</footer>
+        </blockquote>
+        <blockquote>
+          <p>Super lecker und sympathische Mitarbeiter! 5 Sterne 🍔</p>
+          <footer>flyhigh</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Hinkommen ============ -->
+  <section class="visit" id="hin">
+    <div class="wrap visit-in">
+      <div class="visit-info">
+        <h2>Komm vorbei.</h2>
+        <address>
+          Seaside Smashies<br>
+          Hauptstrasse 2<br>
+          9422 Staad
+        </address>
+        <p class="visit-tel"><a href="tel:+41718555056">071 855 50 56</a></p>
+
+        <table class="hours">
+          <caption>Öffnungszeiten</caption>
+          <tbody>
+            <tr data-day="1"><th scope="row">Montag</th><td>Ruhetag</td></tr>
+            <tr data-day="2"><th scope="row">Dienstag</th><td>11:30 – 21:00</td></tr>
+            <tr data-day="3"><th scope="row">Mittwoch</th><td>11:30 – 21:00</td></tr>
+            <tr data-day="4"><th scope="row">Donnerstag</th><td>11:30 – 21:00</td></tr>
+            <tr data-day="5"><th scope="row">Freitag</th><td>11:30 – 22:00</td></tr>
+            <tr data-day="6"><th scope="row">Samstag</th><td>11:30 – 22:00</td></tr>
+            <tr data-day="0"><th scope="row">Sonntag</th><td>12:00 – 21:00</td></tr>
+          </tbody>
+        </table>
+
+        <div class="visit-cta">
+          <a class="btn btn-red" href="https://www.google.com/maps/dir/?api=1&destination=Hauptstrasse+2,+9422+Staad" target="_blank" rel="noopener">Route planen</a>
+          <a class="btn btn-dark" href="tel:+41718555056">Anrufen</a>
+        </div>
+      </div>
+
+      <div class="map" data-map>
+        <div class="map-ask">
+          <p class="map-pin">Hauptstrasse 2<br>9422 Staad</p>
+          <button class="btn btn-line" type="button" data-map-load>Karte anzeigen</button>
+          <p class="map-note">Die Karte kommt von Google Maps. Beim Laden werden Daten an Google übertragen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div class="foot-brand">
+      <p class="foot-name">Seaside Smashies</p>
+      <p>Smashburger in Staad am Bodensee.<br>Frisch gesmasht, nie tiefgekühlt.</p>
+    </div>
+    <div>
+      <h2>Kontakt</h2>
+      <p>Hauptstrasse 2, 9422 Staad<br><a href="tel:+41718555056">071 855 50 56</a></p>
+    </div>
+    <div>
+      <h2>Geöffnet</h2>
+      <p>Di – Do 11:30 – 21:00<br>Fr – Sa 11:30 – 22:00<br>So 12:00 – 21:00</p>
+    </div>
+    <div>
+      <h2>Mehr von uns</h2>
+      <p>Was bei uns auf der Platte passiert, siehst du auf <a href="https://www.tiktok.com/@seasidesmashies" target="_blank" rel="noopener">TikTok @seasidesmashies</a>.</p>
+    </div>
+  </div>
+  <div class="wrap foot-low">
+    <p>© <span data-year>2026</span> Seaside Smashies</p>
+    <p>Preisänderungen vorbehalten.</p>
+  </div>
+</footer>
+
+<div class="bar" aria-label="Schnell bestellen">
+  <a href="tel:+41718555056">Anrufen</a>
+  <a class="bar-red" href="https://www.just-eat.ch" target="_blank" rel="noopener">Bestellen</a>
+</div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
